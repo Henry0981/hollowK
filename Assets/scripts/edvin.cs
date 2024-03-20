@@ -10,7 +10,7 @@ public class edvin : MonoBehaviour
 
     [SerializeField] float groundRadius = 0.2f;
 
-     [SerializeField] LayerMask groundLayer;
+    [SerializeField] LayerMask groundLayer;
 
     [SerializeField] float speed = 10;
 

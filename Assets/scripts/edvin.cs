@@ -53,7 +53,7 @@ public class edvin : MonoBehaviour
 
         isGrounded = Physics2D.OverlapCircle(feet.position, groundRadius, groundLayer);
 
-        if (isGrounded && Input.GetKeyUp("space"))
+        if (isGrounded && Input.GetKeyDown("space"))
         {
             GetComponent<Rigidbody2D>().AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }

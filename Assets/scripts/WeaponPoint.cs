@@ -24,6 +24,8 @@ public class WeaponPoint : MonoBehaviour
             ShotTimer = 0;
         }
 
+        // istället för quanternion identity så använder man spanpointen eller nåt
+
 
     }
 }

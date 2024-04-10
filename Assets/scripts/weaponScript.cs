@@ -6,11 +6,13 @@ public class weaponScript : MonoBehaviour
 {
 
     public Vector2 Pointerposition;
+    [HideInInspector] public Vector2 right;
 
     void Update()
     {
         Pointerposition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        transform.right = (Pointerposition - (Vector2)transform.position).normalized;
+        right = (Pointerposition - (Vector2)transform.position).normalized;
+        transform.right = right;
 
     }
 }
